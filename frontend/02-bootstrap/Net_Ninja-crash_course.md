@@ -231,3 +231,133 @@ Then when it is a larger screen the first column will ocupied 50% of the screen 
         <div class="p-5 bg-primary text-light">col 1</div>
       </div>
 * With contains show like rows in small screen and like columns in screen larger than ipads (md). in the class row we apply the flex box style.
+
+
+## Lesson 08 - Grid Layout (part 2)
+https://www.youtube.com/watch?v=yCCIztB-S_k&list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR&index=8
+
+# Goals:
+- Section # 1
+- Containers
+- Grid Layouts: Felx box
+- Text style
+- use imgage: small screen does not display and large does.
+
+8.1 This section has a text on the right and image on the left.
+
+8.2 Section will have an "id" so we could scroll to those sections with the NavBar
+
+8.3 In the Head component is some padding style applied. Normaly we do that in a css file and imported to the index.html:
+     <style>
+       section {
+         padding: 60px 0;        // 60px to the to and to the botton
+       }
+     </style>
+   </head>
+
+8.4 Inside the section, create a grid
+<div class="container-lg">      // Every grid goes into a container. This means it will be 100% until it reach the "large break point" (lg). When it reach the breaking point it goes to the center kinda structure.
+
+8.5 Inside <div class="container-lg"> :
+<div class="row justify-content-center align-items-center">         
+// "justify-content-center" - Everything inside this <div> will be align to the center
+// align-items-center" - in the Y Axis (horizontal, from top to botton) everything will be in the center.
+
+8.6 Inside <div class="row justify-content-center"> : Create two colums of content( on the right some text and on the left, an image):
+
+8.7 - Create the Div para la comlumna de la izquierda
+
+<div class="col-md-5 text-center text-md-start">
+// "m-5" means that it will be 100 % (12 grid-columns in width) for extra small size screens and then when it reaches the medium size screen getting bigger, at that point we are getting 5 columns of width for this element
+// "text-center text-md-start" It means that the content will be centered for small size screens and when it reaches the medium breaking point, it move to the right (text-md-start).
+
+8.8 Create content of the column on the left:
+Inside <div class="col-md-5 text-center text-md-start">
+
+   <h1> // First time I see a div inside <h1>
+   <div class="display-2">Black-Belt</div> //class="display-2" size of the text. Lower number, bigger letter size.
+   <div class="display-5 text-muted">Your Coding Skills</div>
+   </h1>
+   <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
+   dignissimos?</p> //to Generate random text, type: Lorem and press "tab".
+   // "my-4" - to give margin top and botton.
+   // "text-muted" - to give a gray color to the text
+   <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a> // anchor tag with the shape of a button
+   // "btn-secondary" - give the button the secundary default color
+   // "btn-lg" - Make the button larger.
+
+8.9 - Create content of the column on the right. This will contain the image:
+Inside <div class="row justify-content-center">
+
+<div class="col-md-5 text-center d-none d-md-block"> //This works to centralize the image as well. This doesnt work in css so it makes our work a lot easier.
+// "d-none d-md-block" - It means that as default (small size screens) it will not display the content inside this <div>, in this case the image, and it will show it when it gets to the break point of medium size screens (d-md-block)
+
+8.10 Image
+<img src="/assets/ebook-cover.png" class="img-fluid" alt="ebook"> // It makes is 100% width of the parent element(in this case is 5: <div class="col-md-5)
+
+## Lesson 09. Navbars
+https://www.youtube.com/watch?v=7AT1X9Z41sA&list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR&index=9
+
+* In order to apply the NavBar, we go to the Bootstrap website:
+https://getbootstrap.com/docs/5.2/getting-started/introduction/
+And find the NavBar tht we want. Then just copy
+
+# Location in Mac:
+/Users/carlosinfante/Desktop/coding-projects/winc-academy/frontend-course/MODULE9 - DEBUGGING and DOMAIN MODELING/REVIEW/Bootstrap/bootstrap-The_Net_Ninja
+* There are a bunch of lessons. This is the root file
+
+# Location in GitHub:
+https://github.com/carloscfgos1980/Bootstrap-JavaScript-NetNinja-tutorial
+
+# Goals:
+- NavBar
+- Container xxl
+
+This part of the NavBar is to have a variation of the same link. When the screen is small it will display a text and when it is bigger than medium size, it will display a button. Explanation in the video
+
+          <li class="nav-item d-md-none">
+            <a class="nav-link" href="#pricing">Pricing</a>
+          </li>
+          <li class="nav-item ms-2 d-none d-md-inline">
+            <a class="btn btn-secondary" href="#pricing">buy now</a>
+          </li>
+
+## LEsson 10. Cards
+
+https://www.youtube.com/watch?v=NRoET8-8cbw&list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR&index=10
+
+1. Search in the bootstrap website, what kind of card we want
+   https://getbootstrap.com/docs/5.2/getting-started/introduction/
+
+N: This cards is is used to display a product, little description and a link to something else, like buying the product. So far I dont need to use use it in my DashBoard-app project
+
+* This example is displayed in index.html (lin 80 -136)
+
+# Goals:
+- Cards
+-Containers
+- Show the text only in larger screen: d-none d-lg-block
+- ourline button. It colors by bover over it. 
+- gap. g-0. Cero gap so there is no space between the cards.
+
+
+* To create a grid we need always to put everything inside a <div class='row'>, like this:
+<div class="row my-5 g-0 align-items-center justify-content-center">
+"my-5" - to git a margin top and botton of 5.
+"g-0"- To eliminate the default gap between the cards
+"align-items-center" - To place all the elements in the center (horizontally - X Axis)
+"justify-content-center" - To place all the elements in the center (vertically -Y Axis )
+
+---
+
+- In this case we have 3 cards. The one in the middle is sligthly bigger that the one the right and left. We do it like this:
+
+        <div class="col-8 col-lg-4 col-xl-3">   //"col-8" - It is size (8 is the amoung of grid-collumns).
+        <div class="col-9 col-lg-4">    //"col-9" This is why is a bit bigger
+        <div class="col-8 col-lg-4 col-xl-3">
+
+        About the responsiness:
+        "class="col-8 col-lg-4 col-xl-3". Start in small screens with a size of 8 grid-columns, then in large size (lg-4), takes 4 grid-columns and in extra large screens (col-xl-3) it reduce size of the grid columns to 3. In reallity, we are going to observe the cards in the more or less same size since the variation of size is a percent of the screen and not physical unit meassure like centimeters.
+        "class="col-9 col-lg-4" in this case only onces it gets to large screens (col-lg-4)
+
+- There are many variations of cards. I just need time to play around in select the one I need and like
