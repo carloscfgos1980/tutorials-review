@@ -6,7 +6,11 @@
 * There are a bunch of lessons. This is the root file
 
 # Location in GitHub:
-https://github.com/carloscfgos1980/Bootstrap-JavaScript-NetNinja-tutorial
+https://github.com/carloscfgos1980/Bootstrap-JavaScript-NetNinja-tutorial_I
+* Lesson 1 to 7
+
+https://github.com/carloscfgos1980/Bootstrap-JavaScript-NetNinja-tutorial_II
+* Lesson 8 to 20
 
 ## Lesson 1. Intro and Set up
 https://www.youtube.com/watch?v=O_9u1P5YjVc&list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR
@@ -361,3 +365,144 @@ N: This cards is is used to display a product, little description and a link to 
         "class="col-9 col-lg-4" in this case only onces it gets to large screens (col-lg-4)
 
 - There are many variations of cards. I just need time to play around in select the one I need and like
+
+## Lesson 11 - Accordions
+https://www.youtube.com/watch?v=cVThXv6hYW0&list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR&index=11
+
+# Goals:
+- Accordion
+- Image
+-  Container
+- Grid: Flex Box
+
+This is to create acording text. The only thing we have to check are that the "id"s match. It is a bunch of codes but I just copy everything from
+https://getbootstrap.com/docs/5.2/getting-started/introduction/
+
+Check the example in index.html (lin 139 - 253)
+
+## Lesson 12. List Groups
+
+https://www.youtube.com/watch?v=gwgeMole3gs&list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR&index=12
+
+# Goals:
+- List
+- Container
+- Grid layout
+
+* This feature is gonna be very important in order to style "todo list"
+Example in index.html (lin 256 - 297)
+
+If we only need that the content varias from 100% to a certain sise when a larger screen, we do as bellow (lin 263):
+
+<div class="row justify-content-center">
+<div class="col-lg-8"></div>
+</div>
+
+## Lesoo 13. Bootstrap Icons
+
+https://www.youtube.com/watch?v=rhvMRsE_6sY&list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR&index=13
+
+# Goals:
+- Icons
+
+We can choose the Icon in the followed website:
+https://icons.getbootstrap.com/
+
+# Steps:
+13.1 Copy the Link from bootstrap icon and copy in the <head>. This is for HTML, in REACT is completely different.
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+31.2 Copy the icon and past it in our project:
+lin 27:
+<i class="bi bi-book-half"></i>
+
+lin 261:
+<h2><i class="bi bi-stars"></i>Book Reviews</h2>
+
+Create 5 starts (books review) (lin 269 -275)
+
+              <div class="pb-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+
+Create 4 starts and a half (books review) (lin 297 - 303)
+
+              <div class="pb-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </div>
+
+## Lesoon 14. Working with Forms
+
+https://www.youtube.com/watch?v=dKVX22GR7zQ&list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR&index=14
+
+# Goals:
+- Forms
+- Icons
+
+- Styling forms is very usefull. Example in index.html (lin 343 - 393)
+
+14.1 We have to create the section and give the id:
+<section id="contact">
+
+14.2 Place all the content in a large container so it will have 100% width till it heats large screen size:
+<div class="container-lg">
+
+14.3 We use a grid even when we are dealing with a single column coz that allows us to create a responsive form (it will adjust automatically the size of the content, in this case the form):
+   <div class="row justify-content-center my-5">
+
+14.4 Stablish the size of the contenr for a large screen, by defaul small screen is 100%:
+   <div class="col-lg-6">
+
+14.5 Create a group text. This is a very cool styling
+   <div class="input-group mb-4">
+   <span class="input-group-text">
+   <i class="bi bi-envelope-fill text-secondary"></i>
+   </span>
+   <input type="text" id="email" class="form-control" placeholder="e.g. mario@example.com" />
+   </div>
+
+14.6 Cool styling by putting the label inside the text area
+   <div class="mb-4 mt-5 form-floating">
+   <textarea class="form-control" id="query" style="height: 140px" placeholder="query"></textarea>
+   <label for="query">Your query...</label>
+   </div>
+
+## Lesson 15. Tooltips
+https://www.youtube.com/watch?v=WTrW-1JsDYE&list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR&index=15
+
+* tooltips is the message that appear when we hover the mouse over certain element. In This example is when it hovered over the book image and over the input field of email.
+* This is HTML page and for tooltip we need javascript.
+
+15.1  First we need to reate a function (JavaScript) at the end of the body (lin 416 - 422):
+<script>
+  const tooltips = document.querySelectorAll('.tt')
+  tooltips.forEach(t => {
+    new bootstrap.Tooltip(t)
+  })
+</script>
+
+15.2  Tooltip over the book (lin 76 -78):
+
+              <span class="tt" data-bs-placement="bottom" title="Net Ninja Pro book cover">
+                <img src="/assets/ebook-cover.png" class="img-fluid" alt="ebook">
+              </span>
+
+    N: class="tt" is just a madeup name that we will use to loop over it with the function.
+
+15.3  Tooltip for the email (367-369):
+
+                        <span class="input-group-text">
+                <span class="tt" data-bs-placement="bottom" title="Enter an email address we can reply to.">
+                  <i class="bi bi-question-circle text-muted"></i>
+                </span>
+
+\*There are more examplle of tooltip in this app
