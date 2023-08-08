@@ -12,6 +12,97 @@ https://github.com/carloscfgos1980/Bootstrap-JavaScript-NetNinja-tutorial_I
 https://github.com/carloscfgos1980/Bootstrap-JavaScript-NetNinja-tutorial_II
 * Lesson 8 to 20
 
+# INDEX
+<Lesson 1. Intro and Set up>
+# Goals:
+- Conceptual definition of bootstrap
+
+<Lesson 3. Color and Typography>
+# Goals:
+- Text style: headings, display, lead & alignment, text decorarion & font weight, colors, background colors
+
+<Lesoon 4. Buttons & Button Groups>
+# Goals:
+- Buttons: basic, anchor tag, size, outline(hover)
+
+<Lesson 5. Utility classes>
+# Goals:
+- Classes: margin, padding, borders, box shadow, font weight
+
+<Lesson 6 - Containers>
+# Goals:
+- Containers: Customize the width of the content in our page and adjust it to different point view (type of devise)
+
+<Lesson 07 - Grid Layout (part 1)>
+# Goals:
+- Grid layout. We use this to organize the content in the DOM.
+* By default the screen is divided in 12 columns!
+
+<Lesson 08 - Grid Layout (part 2). Create the app>
+# Goals:
+- Section # 1
+- Containers
+- Grid Layouts: Felx box
+- Text style
+- use imgage: small screen does not display and large does.
+
+<Lesson 09. Navbars>
+# Goals:
+- NavBar
+- Container xxl
+
+<Lesson 10. Cards>
+# Goals:
+- Cards
+-Containers
+- Show the text only in larger screen: d-none d-lg-block
+- ourline button. It colors by bover over it. 
+- gap. g-0. Cero gap so there is no space between the cards.
+
+<Lesson 11 - Accordions>
+# Goals:
+- Accordion
+- Image
+-  Container
+- Grid: Flex Box
+
+<Lesson 12. List Groups>
+# Goals:
+- List
+- Container
+- Grid layout
+
+<Lesson 13. Bootstrap Icons>
+# Goals:
+- Icons
+
+<Lesson 14. Working with Forms>
+# Goals:
+- Forms
+- Icons
+
+<Lesson 15. Tooltips>
+* tooltips is the message that appear when we hover the mouse over certain element. In This example is when it hovered over the book image and over the input field of email.
+* This is HTML page and for tooltip we need javascript.
+
+<Lesson 16. Modals>
+# Goals:
+- Modals. Message tha pops out with extra info by clicking a button
+- Form. In the modal message.
+- Grid layer
+
+* This is the message that pops up. I dont plant to use for now so just know that it is possible. Example index.html (lin 411 - 451)
+
+<Lesson 17. Offcanvas>
+# Goals:
+- Offcanvas. This is a feature to create sideBar. I wont be using it but is good to know that exist...
+
+<Lesson 19. Customizing Bootstrap>
+* I tried this once and it is a pain in the ass. It is easier to creat a claas the and style this specific item in CSS file.
+
+<Lesson 20. Tabs>
+This is to create a sort of NabBar but instead of take us to a new page, it just show new content. I wont be using any time soon but yet it is important to know that exist!
+
 ## Lesson 1. Intro and Set up
 https://www.youtube.com/watch?v=O_9u1P5YjVc&list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR
 
@@ -99,9 +190,9 @@ https://www.youtube.com/watch?v=iUCyU_U0J2E&list=PL4cUxeGkcC9joIM91nLzd_qaH_Aimm
   <p class="text-light bg-danger">white text on secondary bg</p>
 
 
-## Bootstrap 5 Crash Course Tutorial #4 - Buttons & Button Groups
-
+## Lesoon 4. Buttons & Button Groups
 https://www.youtube.com/watch?v=ZZXGmoQ4PdI&list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR&index=4
+
 # Goals:
 - Buttons: basic, anchor tag, size, outline(hover)
 
@@ -185,25 +276,18 @@ https://www.youtube.com/watch?v=Y6q8R-9y6a0&list=PL4cUxeGkcC9joIM91nLzd_qaH_Aimm
 ## Lesson 07 - Grid Layout (part 1)
 https://www.youtube.com/watch?v=irfbn103AzE&list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR&index=7
 
-# Location in Mac:
-/Users/carlosinfante/Desktop/coding-projects/winc-academy/frontend-course/MODULE9 - DEBUGGING and DOMAIN MODELING/REVIEW/Bootstrap/bootstrap-The_Net_Ninja
-* There are a bunch of lessons. This is the root file
-
-# Location in GitHub:
-https://github.com/carloscfgos1980/Bootstrap-JavaScript-NetNinja-tutorial
-
 # Goals:
 - Grid layout. We use this to organize the content in the DOM.
 * By default the screen is divided in 12 columns!
 
-6.1 Basic grid.  Divide the columns equally (lin 5 -28). EX
+7.1 Basic grid.  Divide the columns equally (lin 5 -28). EX
   <div class="container-lg my-5">
     <h2>basic grid</h2>
     <div class="row">
       <div class="col">
 
 
-6.2. Set the columns with different size. (lin 30 -43)
+7.2. Set the columns with different size. (lin 30 -43)
   <div class="container-lg my-5">
       <div class="col">
   <div class="container-lg my-5">
@@ -212,7 +296,7 @@ https://github.com/carloscfgos1980/Bootstrap-JavaScript-NetNinja-tutorial
    <div class="col-3">
     <div class="col-3">
 
-6.3 Responsive column widths (lin 45 -59). Small screen they look like columns and larger than small screen the look like rows:
+7.3 Responsive column widths (lin 45 -59). Small screen they look like columns and larger than small screen the look like rows:
 
 <div class="container-lg my-5">
 <div class="row gy-3">
@@ -226,7 +310,7 @@ N: "sm-4" means that when is small screen(it will be divided in 3 columns with a
 "col-lg-3"
 Then when it is a larger screen the first column will ocupied 50% of the screen (6 columns) and the other 2 columns, 25% each one!
 
-6.4 justifying column. 
+7.4 justifying column. 
   <div class="container-lg my-5">
     <h2>justifying columns</h2>
     <div class="row justify-content-center">
@@ -237,7 +321,7 @@ Then when it is a larger screen the first column will ocupied 50% of the screen 
 * With contains show like rows in small screen and like columns in screen larger than ipads (md). in the class row we apply the flex box style.
 
 
-## Lesson 08 - Grid Layout (part 2)
+## Lesson 08 - Grid Layout (part 2). Creating the app
 https://www.youtube.com/watch?v=yCCIztB-S_k&list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR&index=8
 
 # Goals:
@@ -302,20 +386,14 @@ Inside <div class="row justify-content-center">
 ## Lesson 09. Navbars
 https://www.youtube.com/watch?v=7AT1X9Z41sA&list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR&index=9
 
-* In order to apply the NavBar, we go to the Bootstrap website:
-https://getbootstrap.com/docs/5.2/getting-started/introduction/
-And find the NavBar tht we want. Then just copy
-
-# Location in Mac:
-/Users/carlosinfante/Desktop/coding-projects/winc-academy/frontend-course/MODULE9 - DEBUGGING and DOMAIN MODELING/REVIEW/Bootstrap/bootstrap-The_Net_Ninja
-* There are a bunch of lessons. This is the root file
-
-# Location in GitHub:
-https://github.com/carloscfgos1980/Bootstrap-JavaScript-NetNinja-tutorial
-
 # Goals:
 - NavBar
 - Container xxl
+
+
+* In order to apply the NavBar, we go to the Bootstrap website:
+https://getbootstrap.com/docs/5.2/getting-started/introduction/
+And find the NavBar tht we want. Then just copy
 
 This part of the NavBar is to have a variation of the same link. When the screen is small it will display a text and when it is bigger than medium size, it will display a button. Explanation in the video
 
@@ -326,16 +404,8 @@ This part of the NavBar is to have a variation of the same link. When the screen
             <a class="btn btn-secondary" href="#pricing">buy now</a>
           </li>
 
-## LEsson 10. Cards
-
+## Lesson 10. Cards
 https://www.youtube.com/watch?v=NRoET8-8cbw&list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR&index=10
-
-1. Search in the bootstrap website, what kind of card we want
-   https://getbootstrap.com/docs/5.2/getting-started/introduction/
-
-N: This cards is is used to display a product, little description and a link to something else, like buying the product. So far I dont need to use use it in my DashBoard-app project
-
-* This example is displayed in index.html (lin 80 -136)
 
 # Goals:
 - Cards
@@ -344,7 +414,12 @@ N: This cards is is used to display a product, little description and a link to 
 - ourline button. It colors by bover over it. 
 - gap. g-0. Cero gap so there is no space between the cards.
 
+1. Search in the bootstrap website, what kind of card we want
+   https://getbootstrap.com/docs/5.2/getting-started/introduction/
 
+N: This cards is is used to display a product, little description and a link to something else, like buying the product. So far I dont need to use use it in my DashBoard-app project
+
+* This example is displayed in index.html (lin 80 -136)
 * To create a grid we need always to put everything inside a <div class='row'>, like this:
 <div class="row my-5 g-0 align-items-center justify-content-center">
 "my-5" - to git a margin top and botton of 5.
@@ -381,7 +456,6 @@ https://getbootstrap.com/docs/5.2/getting-started/introduction/
 Check the example in index.html (lin 139 - 253)
 
 ## Lesson 12. List Groups
-
 https://www.youtube.com/watch?v=gwgeMole3gs&list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR&index=12
 
 # Goals:
@@ -399,7 +473,6 @@ If we only need that the content varias from 100% to a certain sise when a large
 </div>
 
 ## Lesoo 13. Bootstrap Icons
-
 https://www.youtube.com/watch?v=rhvMRsE_6sY&list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR&index=13
 
 # Goals:
@@ -441,7 +514,6 @@ Create 4 starts and a half (books review) (lin 297 - 303)
               </div>
 
 ## Lesoon 14. Working with Forms
-
 https://www.youtube.com/watch?v=dKVX22GR7zQ&list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR&index=14
 
 # Goals:
@@ -506,3 +578,51 @@ https://www.youtube.com/watch?v=WTrW-1JsDYE&list=PL4cUxeGkcC9joIM91nLzd_qaH_Aimm
                 </span>
 
 \*There are more examplle of tooltip in this app
+
+
+## Lesson 16. Modals
+https://www.youtube.com/watch?v=tt5uUMQgzl0&list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR&index=16
+
+# Goals:
+- Modals. Message tha pops out with extra info by clicking a button
+- Form. In the modal message.
+- Grid layer
+
+* This is the message that pops up. I dont plant to use for now so just know that it is possible. Example index.html (lin 411 - 451)
+
+## Lesson 17. Offcanvas
+https://www.youtube.com/watch?v=aUVTxD5MasM&list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR&index=17
+
+# Goals:
+- Offcanvas. This is a feature to create sideBar. I wont be using it but is good to know that exist...
+
+# Steps:
+17.2 Inside section id="intro. Create the href to create the sideBar (offcanvas)
+   <a href="#sidebar" class="d-block mt-3" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">
+   Explore my other books
+   </a>
+   </div>
+
+17.2 Create the elements for the sideBar (lin 457 - 468)
+
+## Lesson 18. Dropdowns
+https://www.youtube.com/watch?v=lu4HFx3bzy8&list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR&index=18
+
+# Goals:
+- create a Drown down button that shows other chocices. Normaly links.
+
+* This is a button that show us elements inside the sideBar (offcanvas). I wont be using this but it is good to know that it exists
+  Example in index.html (lin 468 - 477)
+
+
+## Lesson 19. Customizing Bootstrap
+https://www.youtube.com/watch?v=nCX3QVl_PiI&list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR&index=19
+
+* i tried this once and it is a pain in the ass. It is easier to creat a claas the and style this specific item in CSS file.
+
+## Lesson 20. Tabs
+https://www.youtube.com/watch?v=IMM93WydBSw&list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR&index=20
+
+This is to create a sort of NabBar but instead of take us to a new page, it just show new content. I wont be using any time soon but yet it is important to know that exist!
+
+## THE END
