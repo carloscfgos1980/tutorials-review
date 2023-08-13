@@ -10,7 +10,7 @@ Location in GitHub:
 https://github.com/carloscfgos1980/React-Redux-toolkit-shoppingCart-Api_II
 
 # Goals:
-- PUT
+- PUT: Actions fire everytimt that a dispatch is done and change the data
 - FETCH
 
 # STEPS:
